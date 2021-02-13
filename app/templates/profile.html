@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div name="MainArea" id="MainArea">
+    <div name="TopSection" id="TopSection">
+        <img src="{{ url_for('static', filename='myimage1.jpeg')}}">
+        <h1>Patrece Campbell</h1>
+        <p>@patrece</p>
+        <p>Kingston, Jamaica</p>
+        <p>{{ date_joined }}</p>
+    </div>
+    <div name="BottomSection" id="BottomSection">
+        <p>I am a passionate and positive individual who is fond of Web Development and Graphic Designing. I am also very dependable and a good team leader. Contact me if you wish to collaborate on a project.</p>
+        <div name="element" id="element">
+        <div name="Numbers" id="Numbers">
+            <h4>100</h4>
+            <h4>1500</h4>
+            <h4>8000</h4>
+        </div>
+        <div name="PostInfo" id="PostInfo">
+            <h5>Posts</h5>
+            <h5>Following</h5>
+            <h5>Followers</h5>
+        </div>
+        <button>Follow</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
